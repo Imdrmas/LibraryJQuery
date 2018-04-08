@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Excercie Jquery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+
+  <!-- start navbar -->
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="about-us">about us </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="services">services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="solutions">solutions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="products">products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="contact-us">contact us</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+  <div class="fixed-menu">
+    <i class="fa fa-gear"></i>
+    <h3>Change Colors</h3>
+    <ul class="change-color">
+      <li data-color="blue"></li>
+      <li data-color="red"></li>
+      <li data-color="green"></li>
+      <li data-color="purple"></li>
+    </ul>
+    <h3>Important Links</h3>
+    <p>Testing Links</p>
+  </div>
+
+  <!-- start sections -->
+  <div id="home" class="block">
+    <h2 class="skin-background">home</h2>
+    <button class="show-popup" type="button" data-popup=".first-popup" name="button">show 1st popup</button>
+    <button class="show-popup" type="button" name="button" data-popup=".second-popup">show 2nd popup</button>
+    <a href="#" class="button-a">Button</a>
+    <a href="#" class="button-a">Button</a>
+
+
+    <div class="buttons-effects">
+      <button class="buttons-effect from-left" type="button" name="button">
+       <span>From Left</span>
+      </button>
+      <button class="buttons-effect from-top" type="button" name="button">
+       <span>From Top</span>
+      </button>
+      <button class="buttons-effect border-left" type="button" name="button">
+       <span>Border Left</span>
+      </button>
+      <button class="buttons-effect border-top" type="button" name="button">
+       <span>Border Top</span>
+      </button>
+    </div>
+
+    <div class="buttons-effects">
+      <button class="buttons-effect bounce bounce-one">Bounce once</button>
+      <button class="buttons-effect bounce bounce-two">Bounce twoice</button>
+      <button class="buttons-effect bounce bounce-three">Bounce three</button>
+      <button class="buttons-effect bounce bounce-four">Bounce four</button>
+    </div>
+
+
+
+        <div class="animated-progress pro-red">
+          <span data-progress="48" class="red-span"></span>
+        </div>
+
+        <div class="animated-progress pro-blue">
+          <span data-progress="68" class="blue-span"></span>
+        </div>
+        <div class="animated-progress pro-pruple">
+          <span data-progress="88" class="pruple-span"></span>
+        </div>
+
+        <div class="animated-progress pro-green">
+          <span data-progress="98" class="green-span"></span>
+        </div>
+
+
+      <div class="gallery">
+        <div class="master-img">
+          <i class="fa fa-chevron-left fa-lg skin-background"></i>
+          <i class="fa fa-chevron-right fa-lg skin-background"></i>
+          <img src="img/01.jpg" alt="">
+        </div>
+        <div class="thumbnails">
+          <img class="selected" src="img/01.jpg" alt="">
+          <img src="img/02.jpeg" alt="">
+          <img src="img/03.jpg" alt="">
+          <img src="img/04.jpg" alt="">
+          <img src="img/05.jpg" alt="">
+          <img src="img/06.jpg" alt="">
+          <img src="img/07.jpg" alt="">
+        </div>
+      </div>
+
+
+
+
+
+     <div class="products">
+       <div class="product">
+         <h3>product one</h3>
+         <span class="date">10/02/2018</span>
+         <img src="img/pro1.png" alt="">
+         <i class="fa fa-plus fa-lg"></i>
+         <p class="description">this is test description</p>
+       </div>
+       <div class="product">
+         <h3>product two</h3>
+         <span class="date">10/02/2018</span>
+         <img src="img/pro2.png" alt="">
+         <i class="fa fa-plus fa-lg"></i>
+         <p class="description">this is test description</p>
+       </div>
+     </div>
+
+
+     <div class="items list-view">
+       <div class="view-options">
+         <i class="fa fa-list fa-fw fa-2x active" data-class="list-view"></i>
+         <i class="fa fa-th-large fa-fw fa-2x" data-class="grid-view"></i>
+       </div>
+       <div class="item">
+         <h3>Item one</h3>
+         <span class="date">10/02/2018</span>
+         <img src="http://placehold.it/100/DDD/000" alt="">
+         <i class="fa fa-plus fa-lg"></i>
+         <p class="description">this is test description</p>
+       </div>
+       <div class="item">
+         <h3>Item two</h3>
+         <span class="date">10/02/2018</span>
+         <img src="http://placehold.it/100/DDD/000" alt="">
+         <i class="fa fa-plus fa-lg"></i>
+         <p class="description">this is test description</p>
+       </div>
+     </div>
+
+     <div class="our-form">
+       <form>
+         <div>
+         <input class="detect-unicode " type="text"  placeholder="Type your name">
+           <span class="the-message">Please fill the field</span>
+           <div class="unicode"></div>
+       </div>
+       <div>
+         <input class="auto-direction" type="email"  placeholder="Type your email">
+         <span class="the-message"> Please fill the field</span>
+       </div>
+       <div>
+         <input type="password" placeholder="Type your password">
+         <span class="the-message">Please fill the field</span>
+       </div>
+       <div>
+         <textarea placeholder="Type your message" ></textarea>
+         <span class="the-message">Please fill the field</span>
+       </div>
+       <div>
+         <input class="add-tag" type="text" placeholder="Please type tags then press[,]">
+         <div class="tags"></div>
+       </div>
+       <div>
+         <input type="file">
+       </div>
+         <input type="submit" value="Send">
+       </form>
+     </div>
+
+      <div id="english"> </div>
+      <div class="trimmed-texts">
+        <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="container same-height">
+      <div class="one">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+      </div>
+      <div class="two">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+      </div>
+      <div class="three">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="cards">
+        <div class="card card-one"></div>
+        <div class="card card-two"></div>
+        <div class="card card-three"></div>
+        <div class="card card-four"></div>
+        <div class="card card-five"></div>
+        <div class="card card-six"></div>
+        <div class="card card-seven"></div>
+        <div class="card card-eight"><h1>Click here</h1></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3 class="blink-warning">This is Warining</h3>
+    </div>
+
+    <div class="container">
+      <div class="todo-list">
+        <h3>To Do List</h3>
+        <ul class="tasks">
+          <li title="Delete">Finshing python course</li>
+          <li title="Delete">Learning the new Css lesson</li>
+          <li title="Delete">Call my friend Drmas</li>
+        </ul>
+        <form class="add-task"  method="post">
+          <input type="text" name="task" class="task-input" placeholder="Add new task">
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="typer" data-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></p>
+    </div>
+
+    <div class="container">
+      <table class="summary">
+        <tr>
+          <td>Name</td>
+          <td>Value</td>
+          <td>Price</td>
+        </tr>
+        <tr>
+          <td>Data One</td>
+          <td>10 Items</td>
+          <td class="price">100</td>
+        </tr>
+        <tr>
+          <td>Data Two</td>
+          <td>5 Items</td>
+          <td class="price">80</td>
+        </tr>
+        <tr>
+          <td>Data Three</td>
+          <td>1 Item</td>
+          <td class="price">20</td>
+        </tr>
+        <tr>
+          <td>Data Four</td>
+          <td>20 items</td>
+          <td class="price">200</td>
+        </tr>
+        <tr>
+          <td>Data Five</td>
+          <td>2 Items</td>
+          <td class="price">28</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="colspan">Total:</td>
+          <td class="the-total"></td>
+        </tr>
+      </table>
+    </div>
+
+   <div class="container">
+     <div class="text-ticker">
+       <h3>Today Notes</h3>
+       <ul class="ticker-list">
+         <li class="active">This is line number One to test</li>
+         <li>This is line number Tow to test</li>
+         <li>This is line number Three to test</li>
+         <li>This is line number Four to test</li>
+         <li>This is line number Five to test</li>
+         <li>This is line number Six to test</li>
+         <li>This is line number Seven to test</li>
+       </ul>
+     </div>
+   </div>
+
+
+    </div>
+  <div id="about-us" class="block">
+    <h2>about us</h2>
+  </div>
+  <div id="services" class="block">
+    <h2>services</h2>
+  </div>
+  <div id="solutions" class="block">
+    <h2>solutions</h2>
+  </div>
+  <div id="products" class="block">
+    <h2>products</h2>
+  </div>
+  <div id="contact-us" class="block">
+    <h2>contact us</h2>
+  </div>
+ <!-- end sections -->
+
+<!-- end sections -->
+<a class="scroll-to-top" href="#">
+  <i class="fa fa-chevron-up"></i>
+</a>
+
+<div class="popup first-popup">
+  <div class="inner">
+    <h2>This is our first Popup</h2>
+    <p>Lorem sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi  </p>
+   <button type="button" name="button" class="close">Colse</button>
+  </div>
+</div>
+
+<div class="popup second-popup">
+  <div class="inner">
+    <h2>This is our second Popup</h2>
+    <p>Lorem sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi  </p>
+   <button type="button" name="button" class="close">Colse</button>
+  </div>
+</div>
+
+
+   <div class="error-message">
+     This is eroor message This is eroor message
+   </div>
+
+
+
+
+   <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/main.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
